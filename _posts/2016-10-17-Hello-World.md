@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: This is a cool title yo
 ---
 
 This is some custom Hello World text
