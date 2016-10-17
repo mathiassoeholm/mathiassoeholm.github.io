@@ -6,7 +6,7 @@ title: Layer Masks in Depth
 Layers play a central role in Unity. They are used by Cameras in order to only render parts of a scene, and by lights for illuminating specific objects. But here we’ll look at their use in physics, to control what gets hit by raycasts, sphere casts, overlap sphere, linecast and all that jazz.
 It turns out that using layer masks can increase the performance of these things, especially if your scene contains a lot of colliders.
 
-### H3 Ones and zeroes
+### Ones and zeroes
 
 A layer mask is an int. In other words, it is a series of 32 bits, for example:
 
@@ -142,4 +142,9 @@ Here we use the bitwise-and operator (&), which takes two bit patterns of equal 
   1|1 = 1
   1010|1000=1000
   
-  Here’s a challenge: Can you implement the IsInLayerMask method by using the bitwise-or operator, instead of the bitwise-and?
+Here’s a challenge: Can you implement the IsInLayerMask method by using the bitwise-or operator, instead of the bitwise-and?
+
+### Resources
+Official documentation on layers: https://docs.unity3d.com/Manual/Layers.html
+
+Some best practices of physics, including some performance profiling on RayCasts: https://unity3d.com/learn/tutorials/topics/physics/physics-best-practices
