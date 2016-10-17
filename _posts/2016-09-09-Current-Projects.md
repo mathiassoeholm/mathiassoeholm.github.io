@@ -19,6 +19,6 @@ The second project takes up most of my time, but it's also progressing really ni
 
 It's a tower defense game for HTC Vive, featuring Asset Store skeletons, lasers, saw blade frisbees and bombs!
 
-The game is explained more easily with a [video](https://www.youtube.com/watch?v=_JrcWsgvreM), but here's a more recent screenshot:
+The game is explained more easily with a [video](https://www.youtube.com/watch?v=_JrcWsgvreM), but here's a recent screenshot:
 
 ![vrgame]({{ site.baseurl }}/images/vrgame.png)
