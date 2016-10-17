@@ -21,7 +21,7 @@ So looking at the layer mask above and the Layers we’ve set up in Unity. Can y
 There’s an easy way of constructing such a layer mask in Unity. For example we can write:
 
 ```cs
-LayerMask.GetMask(“Enemy”)
+LayerMask.GetMask(“Enemy”);
 ```
 
 GetMask returns an int, and if we try to write this value to the console, it just writes 512. If you’re familiar with binary numbers, this is probably what you would expect. The binary representation of 512 as a 32-bit integer looks as follows:
