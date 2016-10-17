@@ -77,14 +77,12 @@ var layerMask = (1 << gameObjectA.layer) | (1 << gameObjectB.layer);
 
 Okay, so what the heck is going on here? We are using a new operator (|) which is the bitwise-or operator. It takes two bit patterns of equal length and performs the logical OR operation on each pair of corresponding bits. This operator is best explained with a few examples:
 
-```cs
 0|0 = 0
 0|1 = 1
 1|0 = 1
 1|1 = 1
 0010|1000=1010
 0000 0100 1000 | 0100 0000 1000 = 0100 0100 1000
-```
 
 I hope you can see how we are able to combine two layer masks with this operator. You can think of it as combining the true values in the two layer masks, where 1 means true and 0 means false.
 
@@ -101,7 +99,7 @@ This is a lot more readable than the above examples that uses bit shifting. Howe
 ```cs
 public static int GetLayerMask(this GameObject gameobject)
 {
-return 1 << gameobject.layer;
+  return 1 << gameobject.layer;
 }
 ```
 
