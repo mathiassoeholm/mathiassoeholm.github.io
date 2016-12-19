@@ -134,11 +134,11 @@ public static bool IsInLayerMask(int layerMask, int layer)
 
 Here we use the bitwise-and operator (&), which takes two bit patterns of equal length and performs the logical AND operation on each pair of corresponding bits. Here’s a few examples of using the bitwise-and operator:
 
-  0|0 = 0
-  0|1 = 0
-  1|0 = 0
-  1|1 = 1
-  1010|1000=1000
+* 0&0 = 0
+* 0&1 = 0
+* 1&0 = 0
+* 1&1 = 1
+* 1010&1000=1000
   
 Here’s a challenge: Can you implement the IsInLayerMask method by using the bitwise-or operator, instead of the bitwise-and?
 
