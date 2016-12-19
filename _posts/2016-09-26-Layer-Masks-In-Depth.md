@@ -77,12 +77,12 @@ var layerMask = (1 << gameObjectA.layer) | (1 << gameObjectB.layer);
 
 Okay, so what the heck is going on here? We are using a new operator (&#124;) which is the bitwise-or operator. It takes two bit patterns of equal length and performs the logical OR operation on each pair of corresponding bits. This operator is best explained with a few examples:
 
-0|0 = 0
-0|1 = 1
-1|0 = 1
-1|1 = 1
-0010|1000=1010
-0000 0100 1000 | 0100 0000 1000 = 0100 0100 1000
+* 0&#124;0 = 0
+* 0&#124;1 = 1
+* 1&#124;0 = 1
+* 1&#124;1 = 1
+* 0010&#124;1000=1010
+* 0000 0100 1000 &#124; 0100 0000 1000 = 0100 0100 1000
 
 I hope you can see how we are able to combine two layer masks with this operator. You can think of it as combining the true values in the two layer masks, where 1 means true and 0 means false.
 
