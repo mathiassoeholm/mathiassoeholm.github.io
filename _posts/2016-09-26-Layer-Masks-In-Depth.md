@@ -75,7 +75,7 @@ A better way would be:
 var layerMask = (1 << gameObjectA.layer) | (1 << gameObjectB.layer);
 ```
 
-Okay, so what the heck is going on here? We are using a new operator (|) which is the bitwise-or operator. It takes two bit patterns of equal length and performs the logical OR operation on each pair of corresponding bits. This operator is best explained with a few examples:
+Okay, so what the heck is going on here? We are using a new operator (⎮) which is the bitwise-or operator. It takes two bit patterns of equal length and performs the logical OR operation on each pair of corresponding bits. This operator is best explained with a few examples:
 
 0|0 = 0
 0|1 = 1
