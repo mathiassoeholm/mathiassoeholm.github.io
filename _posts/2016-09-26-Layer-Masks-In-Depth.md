@@ -37,7 +37,7 @@ Using LayerMask.GetMask is not the only way to create a layer mask, and it might
 Let’s say we didn’t know the name of the layer that we wanted to create a mask for. But we have a reference to a GameObject on this layer. We might write something like this:
 
 ```cs
-var layerName = LayerMask.NameToLayer(enemyGameObject.layer);
+var layerName = LayerMask.LayerToName(enemyGameObject.layer);
 var layerMask = LayerMask.GetMask(layerName);
 ```
 
