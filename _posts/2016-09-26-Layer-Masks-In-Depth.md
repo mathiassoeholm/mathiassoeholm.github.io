@@ -64,8 +64,8 @@ You’ll notice that this is the layer mask for the enemy layer.
 Remember that the smart thing about layer masks is that we can combine them. We might have two game objects, whose layers we would like to combine in a layer mask. One possible way is this:
 
 ```cs
-var layerNameA = LayerMask.NameToLayer(gameObjectA.layer);
-var layerNameB = LayerMask.NameToLayer(gameObjectB.layer);
+var layerNameA = LayerMask.LayerToName(gameObjectA.layer);
+var layerNameB = LayerMask.LayerToName(gameObjectB.layer);
 var layerMask = LayerMask.GetMask(layerNameA, layerNameB);
 ```
 
