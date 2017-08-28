@@ -12,9 +12,14 @@
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/swinggame.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body style="background-color:#441F17;">
+  <body>
     <div class="webgl-content">
       <div id="gameContainer" style="width: 450px; height: 800px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">RopeSwing</div>
+      </div>
     </div>
   </body>
 </html>
